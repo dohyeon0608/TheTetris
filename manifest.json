@@ -1,0 +1,24 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "테트리스",
+		"description": "§l테트리스!!\n제작: Kimdohyeon06081",
+		"uuid": "0f9dc788-50b2-4ff0-87b3-b4d01d858f6e",
+		"version": [
+			1, 0, 0
+		],
+		"min_engine_version": [
+			1,
+			19,
+			0
+		]
+	},
+	"modules": [
+        {
+            "description": "Example behavior module",
+            "type": "data",
+            "uuid": "a264af7e-ba33-4e4d-adbe-90301d1817f1",
+            "version": [1, 0, 0]
+        }
+    ]
+}

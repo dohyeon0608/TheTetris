@@ -66,47 +66,13 @@ execute as @e[type=minecraft:armor_stand,name=T] at @s run tp @e[type=minecraft:
 effect @a night_vision 15 0 true
 effect @e[type=minecraft:armor_stand] invisibility 1 0 true
 
-
-# line
-
-# scoreboard players reset * l0
-# scoreboard players reset * l1
-# scoreboard players reset * l2
-# scoreboard players reset * l3
-# scoreboard players reset * l4
-# scoreboard players reset * l5
-# scoreboard players reset * l6
-# scoreboard players reset * l7
-# scoreboard players reset * l8
-# scoreboard players reset * l9
-# scoreboard players reset * l10
-# scoreboard players reset * l11
-# scoreboard players reset * l12
-# scoreboard players reset * l13
-# scoreboard players reset * l14
-# scoreboard players reset * l15
-# scoreboard players reset * l16
-# scoreboard players reset * l17
-# scoreboard players reset * l18
-# scoreboard players reset * l19
-
-
 # game over
 
 execute if score l17 line matches 1.. run tag @a[tag=join] add game_over
 execute if score l18 line matches 1.. run tag @a[tag=join] add game_over
 execute if score l19 line matches 1.. run tag @a[tag=join] add game_over
-# execute @a[scores={l18=..9}] at @s run say L18에 블록 감지
-# execute @a[scores={l18=..9}] at @s run tellraw @a {"rawtext":[{"score":{"name":"@s","objective":"l18"}}]}
-# execute @a[scores={l19=..9},tag=join] at @s run tag @s add game_over
-# execute @a[scores={l19=..9}] at @s run say L19에 블록 감지
-# execute @a[scores={l19=..9}] at @s run tellraw @a {"rawtext":[{"score":{"name":"@s","objective":"l19"}}]}
 execute as @a[tag=game_over,c=1] at @s run function game/game_over
 
 execute as @e[tag=blocked,c=1] at @s run function game/on_blocking
 
 title @a actionbar @e[tag=blocked]
-
-
-
-# kill @e[type=!player]

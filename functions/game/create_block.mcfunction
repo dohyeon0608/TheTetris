@@ -1,22 +1,26 @@
-scoreboard players operation block main = next main
-scoreboard players random next main 0 6
-execute if score block main matches 0 run summon minecraft:armor_stand I 17 -60 4
-execute if score block main matches 1 run summon minecraft:armor_stand O 17 -60 4
-execute if score block main matches 2 run summon minecraft:armor_stand Z 17 -60 4
-execute if score block main matches 3 run summon minecraft:armor_stand S 17 -60 4
-execute if score block main matches 4 run summon minecraft:armor_stand J 17 -60 4
-execute if score block main matches 5 run summon minecraft:armor_stand L 17 -60 4
-execute if score block main matches 6 run summon minecraft:armor_stand T 17 -60 4
-execute if score next main matches 0 run structure load I 8 -60 12
-execute if score next main matches 1 run structure load O 8 -60 12
-execute if score next main matches 2 run structure load Z 8 -60 12
-execute if score next main matches 3 run structure load S 8 -60 12
-execute if score next main matches 4 run structure load J 8 -60 12
-execute if score next main matches 5 run structure load L 8 -60 12
-execute if score next main matches 6 run structure load T 8 -60 12
+# scoreboard players operation block main = next main
+
+#초기 블록 없을 때
+execute unless entity @e[tag=next_set,x=-3,y=-63,z=1,dx=0,dy=0,dz=6] run function game/init_next_set
+function game/next
+
+# 중간 블록 없을 때
+execute unless entity @e[tag=next_set,x=-3,y=-63,z=1,dx=0,dy=0,dz=6] run function game/init_next_set
+function game/update_next
+
+# scoreboard players random next main 0 6
+execute if entity @e[tag=next_set,x=-3,y=-63,z=0,dx=0,dy=0,dz=0,c=1,name="nextI"] run summon minecraft:armor_stand I 17 -60 4
+execute if entity @e[tag=next_set,x=-3,y=-63,z=0,dx=0,dy=0,dz=0,c=1,name="nextO"] run summon minecraft:armor_stand O 17 -60 4
+execute if entity @e[tag=next_set,x=-3,y=-63,z=0,dx=0,dy=0,dz=0,c=1,name="nextZ"] run summon minecraft:armor_stand Z 17 -60 4
+execute if entity @e[tag=next_set,x=-3,y=-63,z=0,dx=0,dy=0,dz=0,c=1,name="nextS"] run summon minecraft:armor_stand S 17 -60 4
+execute if entity @e[tag=next_set,x=-3,y=-63,z=0,dx=0,dy=0,dz=0,c=1,name="nextJ"] run summon minecraft:armor_stand J 17 -60 4
+execute if entity @e[tag=next_set,x=-3,y=-63,z=0,dx=0,dy=0,dz=0,c=1,name="nextL"] run summon minecraft:armor_stand L 17 -60 4
+execute if entity @e[tag=next_set,x=-3,y=-63,z=0,dx=0,dy=0,dz=0,c=1,name="nextT"] run summon minecraft:armor_stand T 17 -60 4
+
 summon minecraft:armor_stand b1 -1 -62 -1
 summon minecraft:armor_stand b2 -1 -62 -1
 summon minecraft:armor_stand b3 -1 -62 -1
 summon minecraft:armor_stand b4 -1 -62 -1
+
 scoreboard players set @a block 0
 function game/count_line

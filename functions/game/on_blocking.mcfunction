@@ -15,5 +15,3 @@ function game/remove_line
 kill @e[type=minecraft:armor_stand,tag=stand]
 kill @e[type=minecraft:armor_stand,tag=b]
 
-
-# execute if score l18 line matches 10 if score l19 line matches 10 unless entity @e[tag=b] run function game/create_block

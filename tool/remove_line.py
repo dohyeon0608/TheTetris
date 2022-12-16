@@ -8,7 +8,7 @@ final1 = 'execute if score l{} line matches 10 run scoreboard players add remove
 final2 = 'execute if score removeAbleLine main matches 1.. run function game/remove_line'
 
 result = ''
-for x in range(20):
+for x in range(19, -1, -1):
     result += command.format(x, x, x) + command2.format(x, x+1, x)
 
 # result += final

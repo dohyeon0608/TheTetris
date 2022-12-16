@@ -6,7 +6,4 @@ scoreboard objectives add line dummy "줄 정보"
 scoreboard objectives add next dummy
 scoreboard objectives add block dummy
 
-
-tag @a[name=errorremoveasddasadsdasadsdasadsdsaadsdas] add join
-
 tellraw @s {"rawtext":[{"text":"§l§bTETRIS: §r셋업 완료!"}]}

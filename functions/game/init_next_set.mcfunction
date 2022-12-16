@@ -34,11 +34,11 @@ tp @e[tag=place5,tag=selected,tag=!next_set_old] -3 -63 5
 tp @e[tag=place6,tag=selected,tag=!next_set_old] -3 -63 6
 tp @e[tag=place7,tag=selected,tag=!next_set_old] -3 -63 7
 
-# tellraw @a {"rawtext":[{"text":"§b===== Executing init_next_set ====="}]}
-# tellraw @a {"rawtext":[{"text":"§b[1] §r"},{"selector":"@e[tag=place1,tag=selected,tag=!next_set_old]"}]}
-# tellraw @a {"rawtext":[{"text":"§b[2] §r"},{"selector":"@e[tag=place2,tag=selected,tag=!next_set_old]"}]}
-# tellraw @a {"rawtext":[{"text":"§b[3] §r"},{"selector":"@e[tag=place3,tag=selected,tag=!next_set_old]"}]}
-# tellraw @a {"rawtext":[{"text":"§b[4] §r"},{"selector":"@e[tag=place4,tag=selected,tag=!next_set_old]"}]}
-# tellraw @a {"rawtext":[{"text":"§b[5] §r"},{"selector":"@e[tag=place5,tag=selected,tag=!next_set_old]"}]}
-# tellraw @a {"rawtext":[{"text":"§b[6] §r"},{"selector":"@e[tag=place6,tag=selected,tag=!next_set_old]"}]}
-# tellraw @a {"rawtext":[{"text":"§b[7] §r"},{"selector":"@e[tag=place7,tag=selected,tag=!next_set_old]"}]}
+execute if score debugMode main matches 1 run tellraw @a {"rawtext":[{"text":"§b===== Executing init_next_set ====="}]}
+execute if score debugMode main matches 1 run tellraw @a {"rawtext":[{"text":"§b[1] §r"},{"selector":"@e[tag=place1,tag=selected,tag=!next_set_old]"}]}
+execute if score debugMode main matches 1 run tellraw @a {"rawtext":[{"text":"§b[2] §r"},{"selector":"@e[tag=place2,tag=selected,tag=!next_set_old]"}]}
+execute if score debugMode main matches 1 run tellraw @a {"rawtext":[{"text":"§b[3] §r"},{"selector":"@e[tag=place3,tag=selected,tag=!next_set_old]"}]}
+execute if score debugMode main matches 1 run tellraw @a {"rawtext":[{"text":"§b[4] §r"},{"selector":"@e[tag=place4,tag=selected,tag=!next_set_old]"}]}
+execute if score debugMode main matches 1 run tellraw @a {"rawtext":[{"text":"§b[5] §r"},{"selector":"@e[tag=place5,tag=selected,tag=!next_set_old]"}]}
+execute if score debugMode main matches 1 run tellraw @a {"rawtext":[{"text":"§b[6] §r"},{"selector":"@e[tag=place6,tag=selected,tag=!next_set_old]"}]}
+execute if score debugMode main matches 1 run tellraw @a {"rawtext":[{"text":"§b[7] §r"},{"selector":"@e[tag=place7,tag=selected,tag=!next_set_old]"}]}

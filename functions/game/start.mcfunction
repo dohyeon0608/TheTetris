@@ -12,5 +12,9 @@ execute if entity @a[tag=join] run setblock 8 -36 10 air 0 destroy
 execute if entity @a[tag=join] run setblock 10 -36 8 air 0 destroy
 scoreboard players set level main 1
 
+scoreboard players add @a[tag=join] highScore 0
+scoreboard players add @a[tag=join] highLine 0
+scoreboard players add @a[tag=join] highLevel 0
+
 execute if score debugMode main matches 1 run tellraw @s {"rawtext":[{"text":"§l§bTETRIS : §r디버그 모드로 시작했습니다."}]}
 execute unless entity @a[tag=join] run tellraw @a {"rawtext":[{"text":"§c지금은 시작할 수 없습니다! 참가자가 존재하지 않습니다!"}]}

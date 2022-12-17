@@ -9,8 +9,11 @@ execute as @e[tag=b] if entity @e[type=armor_stand,name=L] at @s run setblock ~ 
 execute as @e[tag=b] if entity @e[type=armor_stand,name=T] at @s run setblock ~ ~ ~ concrete 10
 
 execute if score time main matches 1.. if score l18 line matches 0 if score l19 line matches 0 run function game/create_block
+playsound use.stone @a[tag=join]
 
 function game/remove_line
+
+scoreboard players add score main 5
 
 kill @e[type=minecraft:armor_stand,tag=stand]
 kill @e[type=minecraft:armor_stand,tag=b]

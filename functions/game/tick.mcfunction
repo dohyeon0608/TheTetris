@@ -64,7 +64,7 @@ execute as @e[type=minecraft:armor_stand,name=T] at @s run tp @e[type=minecraft:
 
 # effect
 effect @a night_vision 15 0 true
-effect @e[type=minecraft:armor_stand] invisibility 1 0 true
+# effect @e[type=minecraft:armor_stand] invisibility 1 0 true
 
 # game over
 

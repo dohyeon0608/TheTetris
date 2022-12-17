@@ -19,7 +19,7 @@
 				"value": "§l§a완전히 내리기"
 			},
 			"minecraft:icon": {
-				"texture": "crossbow_standby"
+				"texture": "tetris_hard_drop"
 			}
 		},
 		"events": {

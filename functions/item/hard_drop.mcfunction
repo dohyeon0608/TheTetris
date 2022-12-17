@@ -45,8 +45,6 @@ function game/update_block
 
 scoreboard players set @a[tag=join,c=1] drop_time 0
 
-tag * remove haveHardDropped
-
 execute as @e[tag=b] at @s if block ~-1 ~ ~ concrete -1 run tag @s add blocked
 execute as @e[tag=b] at @s if block ~-1 ~ ~ iron_block 0 run tag @s add blocked
 

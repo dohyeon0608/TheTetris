@@ -19,7 +19,7 @@
 				"value": "§l§a왼쪽으로 돌리기"
 			},
 			"minecraft:icon": {
-				"texture": "bow_standby"
+				"texture": "tetris_turn_left"
 			}
 		},
 		"events": {

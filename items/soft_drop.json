@@ -19,7 +19,7 @@
 				"value": "§l§a아래로 내리기"
 			},
 			"minecraft:icon": {
-				"texture": "crossbow_standby"
+				"texture": "tetris_soft_drop"
 			}
 		},
 		"events": {

@@ -19,7 +19,7 @@
 				"value": "§l§a왼쪽으로 움직이기"
 			},
 			"minecraft:icon": {
-				"texture": "crossbow_standby"
+				"texture": "tetris_move_left"
 			}
 		},
 		"events": {

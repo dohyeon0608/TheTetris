@@ -77,4 +77,6 @@ execute as @e[tag=blocked,c=1] at @s run function game/on_blocking
 
 execute as @e[tag=join] if score time main matches 1.. if score debugMode main matches 0 at @s run tp ~ ~ ~ 270 90
 
-title @a actionbar @e[tag=blocked]
+# title @a actionbar @e[tag=blocked]
+
+function lobby/entry

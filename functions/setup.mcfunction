@@ -13,4 +13,4 @@ scoreboard players set level main 0
 scoreboard objectives add highLine dummy "§e§l최고 제거된 줄"
 scoreboard players set removedLine main 0
 
-tellraw @s {"rawtext":[{"text":"§l§bTETRIS: §r셋업 완료!"}]}
+tellraw @s {"rawtext":[{"text":"§l§bTETRIS 》 §r셋업 완료!"}]}

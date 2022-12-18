@@ -1,8 +1,8 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "테트리스",
-		"description": "§l테트리스!!\n제작: Kimdohyeon06081",
+		"name": "§l테트리스 애드온",
+		"description": "테트리스 맵에서 사용되는 애드온입니다.\n제작: Kimdohyeon06081",
 		"uuid": "0f9dc788-50b2-4ff0-87b3-b4d01d858f6e",
 		"version": [
 			1, 3, 0

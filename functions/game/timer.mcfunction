@@ -19,4 +19,5 @@ execute if score time main matches 120 run playsound random.click @a[tag=join]
 execute if score time main matches 140 run title @a[tag=join] title §l§e시작!
 execute if score time main matches 140 run playsound beacon.activate @a[tag=join] 
 execute if score time main matches 140.. run titleraw @a[tag=join] actionbar {"rawtext":[{"text":"§l§bSCORE: §r§ㄱ§f"},{"score":{"objective":"main","name":"score"}}]}
+execute if score time main matches 140.. run title @a[tag=join] times 10 20 10
 execute as @a[tag=join] if score time main matches 140 run function game/create_block

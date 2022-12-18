@@ -64,7 +64,7 @@ execute as @e[type=minecraft:armor_stand,name=T] at @s run tp @e[type=minecraft:
 
 # effect
 effect @a night_vision 15 0 true
-# effect @e[type=minecraft:armor_stand] invisibility 1 0 true
+execute if score debugMode main matches 0 run effect @e[type=minecraft:armor_stand] invisibility 1 0 true
 
 # game over
 
@@ -76,6 +76,12 @@ execute as @a[tag=game_over,c=1] at @s run function game/game_over
 execute as @e[tag=blocked,c=1] at @s run function game/on_blocking
 
 execute as @e[tag=join] if score time main matches 1.. if score debugMode main matches 0 at @s run tp ~ ~ ~ 270 90
+execute unless entity @e[tag=join] if score time main matches 1.. run tellraw @a {"rawtext":[{"text":"§l§bTETRIS 》 §r§c플레이어를 찾을 수 없어 게임을 강제 종료합니다."}]}
+execute unless entity @e[tag=join] if score time main matches 1.. run function game/game_over
+
+execute as @a[tag=!join,tag=!spector,x=6,y=-48,z=11,dx=0,dy=0,dz=0] if score debugMode main matches 0 at @s run tellraw @s {"rawtext":[{"text":"§l§bTETRIS 》 §r§f게임 중 연결이 끊어져 진행중인 게임이 강제종료되었습니다."}]}
+execute as @a[tag=!join,tag=!spector,x=6,y=-48,z=11,dx=0,dy=0,dz=0] if score debugMode main matches 0 at @s run tellraw @s {"rawtext":[{"text":"§l§bTETRIS 》 §r§f이전 게임의 결과는 삭제되었습니다."}]}
+execute as @a[tag=!join,tag=!spector,x=6,y=-48,z=11,dx=0,dy=0,dz=0] if score debugMode main matches 0 at @s run tp -65 -38 8
 
 # title @a actionbar @e[tag=blocked]
 

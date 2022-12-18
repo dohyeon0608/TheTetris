@@ -1,7 +1,7 @@
 execute if score time main matches 1.. run scoreboard players add time main 1
 execute if score time main matches 140.. run execute as @a[tag=join,c=1] run scoreboard players add drop_time main 1
 execute if score drop_time main matches 20 run function game/on_falling
-execute if score drop_time main matches 20.. run scoreboard players set drop_time main 0
+execute if score drop_time main matches 20.. run function game/reset_drop_time
 
 # game timer
 

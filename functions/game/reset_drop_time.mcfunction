@@ -7,9 +7,9 @@ execute if score level main matches 6 run scoreboard players set drop_time main 
 execute if score level main matches 7 run scoreboard players set drop_time main 6
 execute if score level main matches 8 run scoreboard players set drop_time main 7
 execute if score level main matches 9 run scoreboard players set drop_time main 8
-execute if score level main matches 10 run scoreboard players set drop_time main 9
-execute if score level main matches 11 run scoreboard players set drop_time main 10
-execute if score level main matches 12 run scoreboard players set drop_time main 11
-execute if score level main matches 13 run scoreboard players set drop_time main 12
-execute if score level main matches 14 run scoreboard players set drop_time main 13
-execute if score level main matches 15 run scoreboard players set drop_time main 14
+execute if score level main matches 10 run scoreboard players set drop_time main 10
+# execute if score level main matches 11 run scoreboard players set drop_time main 10
+# execute if score level main matches 12 run scoreboard players set drop_time main 11
+# execute if score level main matches 13 run scoreboard players set drop_time main 12
+# execute if score level main matches 14 run scoreboard players set drop_time main 13
+# execute if score level main matches 15 run scoreboard players set drop_time main 14

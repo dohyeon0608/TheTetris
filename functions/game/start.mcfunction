@@ -1,4 +1,4 @@
-tp @a[tag=join] 8 -44 8 270 90
+tp @a[tag=join] 6 -48 11 270 90
 execute if entity @a[tag=join] run fill 0 -60 0 19 -60 9 air
 execute if entity @a[tag=join] run scoreboard players set time main 1
 replaceitem entity @a[tag=join] slot.hotbar 0 tetris:move_left 1 0 {"item_lock": { "mode": "lock_in_slot" } }

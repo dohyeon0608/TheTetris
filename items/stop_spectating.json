@@ -1,0 +1,35 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "tetris:stop_spectating",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:hand_equipped": false,
+			"minecraft:foil": false,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "stop_spectating"
+				}
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:damage": 0,
+			"minecraft:display_name": {
+				"value": "§l§a관전 그만하기"
+			},
+			"minecraft:icon": {
+				"texture": "ender_pearl"
+			}
+		},
+		"events": {
+			"stop_spectating": {
+				"run_command": {
+					"command": [
+						"function item/stop_spectating"
+					]
+				}
+			}
+		}
+	}
+}

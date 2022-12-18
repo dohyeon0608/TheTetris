@@ -83,6 +83,14 @@ execute as @a[tag=!join,tag=!spector,x=6,y=-48,z=11,dx=0,dy=0,dz=0] if score deb
 execute as @a[tag=!join,tag=!spector,x=6,y=-48,z=11,dx=0,dy=0,dz=0] if score debugMode main matches 0 at @s run tellraw @s {"rawtext":[{"text":"§l§bTETRIS 》 §r§f이전 게임의 결과는 삭제되었습니다."}]}
 execute as @a[tag=!join,tag=!spector,x=6,y=-48,z=11,dx=0,dy=0,dz=0] if score debugMode main matches 0 at @s run tp -65 -38 8
 
+scoreboard players add @a highLevel 0
+scoreboard players add @a highLine 0
+scoreboard players add @a highScore 0
+
 # title @a actionbar @e[tag=blocked]
 
+stopsound @a game.player.die
+# execute as @e[tag=stand] at @s run particle minecraft:endrod ~ ~2 ~
+
 function lobby/entry
+function item/item_set

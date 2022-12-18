@@ -1,3 +1,4 @@
+function game/tick
 execute as @e[tag=b] if entity @e[type=minecraft:armor_stand,name=I] at @s run setblock ~ ~ ~ concrete_powder 3
 execute as @e[tag=b] if entity @e[type=minecraft:armor_stand,name=O] at @s run setblock ~ ~ ~ concrete_powder 4
 execute as @e[tag=b] if entity @e[type=minecraft:armor_stand,name=Z] at @s run setblock ~ ~ ~ concrete_powder 14

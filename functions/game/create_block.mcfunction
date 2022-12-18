@@ -22,7 +22,6 @@ summon minecraft:armor_stand b2 -1 -62 -1
 summon minecraft:armor_stand b3 -1 -62 -1
 summon minecraft:armor_stand b4 -1 -62 -1
 
-function game/tick
 function game/update_block
 
 scoreboard players set @a block 0

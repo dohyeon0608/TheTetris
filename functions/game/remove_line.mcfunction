@@ -79,3 +79,4 @@ execute if score removeAbleLine main matches 1..2 as @a[tag=join] at @s run play
 execute if score removeAbleLine main matches 3..4 as @a[tag=join] at @s run playsound random.levelup @s ~ ~ ~ 1 0.5
 
 scoreboard players operation removedLine main += removeAbleLine main
+scoreboard players operation temp_removedLine main += removeAbleLine main

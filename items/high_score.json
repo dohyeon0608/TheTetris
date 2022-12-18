@@ -1,0 +1,35 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "tetris:high_record",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:hand_equipped": false,
+			"minecraft:foil": false,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "high_record"
+				}
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:damage": 0,
+			"minecraft:display_name": {
+				"value": "§l§a최고기록 확인"
+			},
+			"minecraft:icon": {
+				"texture": "book_normal"
+			}
+		},
+		"events": {
+			"high_record": {
+				"run_command": {
+					"command": [
+						"function item/high_record"
+					]
+				}
+			}
+		}
+	}
+}

@@ -9,7 +9,6 @@ execute as @e[tag=cannot_move] run tag @e[tag=b] add cannot_move
 
 execute if entity @e[type=minecraft:armor_stand,tag=cannot_move,c=1] as @e[type=minecraft:armor_stand,tag=stand] at @s run tp ~ ~ ~1
 
-function game/tick
 function game/update_block
 
 tag @e remove cannot_move

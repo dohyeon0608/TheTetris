@@ -6,5 +6,4 @@ execute as @e[tag=b] at @s run setblock ~ ~ ~ air
 
 execute as @e[type=armor_stand,tag=stand] at @s run tp ~-1 ~ ~
 
-function game/tick
 function game/update_block

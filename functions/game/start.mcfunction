@@ -1,4 +1,5 @@
 tp @a[tag=join] 6 -48 11 270 90
+scoreboard players add @a[tag=join] deviceMode 0
 execute if entity @a[tag=join] run fill 0 -60 0 19 -60 9 air
 execute if entity @a[tag=join] run scoreboard players set time main 1
 scoreboard players set @a[tag=join] itemSet 1

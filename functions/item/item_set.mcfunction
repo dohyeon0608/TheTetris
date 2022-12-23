@@ -4,7 +4,9 @@ scoreboard players add @a itemSet 0
 # 1 in-game
 # 2 in-spectating
 
+execute as @a if score @s itemSet matches 0 run replaceitem entity @s slot.hotbar 7 tetris:set_device 1 0 {"item_lock": { "mode": "lock_in_slot" } }
 execute as @a if score @s itemSet matches 0 run replaceitem entity @s slot.hotbar 8 tetris:high_record 1 0 {"item_lock": { "mode": "lock_in_slot" } }
+execute as @a unless score @s itemSet matches 0 run clear @s tetris:set_device
 execute as @a unless score @s itemSet matches 0 run clear @s tetris:high_record
 
 execute as @a if score @s itemSet matches 1 run replaceitem entity @s slot.hotbar 0 tetris:move_left 1 0 {"item_lock": { "mode": "lock_in_slot" } }

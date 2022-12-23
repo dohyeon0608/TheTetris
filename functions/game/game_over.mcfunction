@@ -20,7 +20,7 @@ execute if entity @a[tag=join] if score temp_level main matches 1.. run tellraw 
 execute if entity @a[tag=join] unless score temp_level main matches 1.. run tellraw @a {"rawtext":[{"text":"§l§bTETRIS 》 §r§f도달한 레벨 : "},{"score":{"objective":"main","name":"level"}}]}
 execute if entity @a[tag=join] if score temp_line main matches 1.. run tellraw @a {"rawtext":[{"text":"§l§bTETRIS 》 §r§f제거한 줄 : "},{"score":{"objective":"main","name":"removedLine"}},{"text":" §l§e최고 기록!"}]}
 execute if entity @a[tag=join] unless score temp_line main matches 1.. run tellraw @a {"rawtext":[{"text":"§l§bTETRIS 》 §r§f제거한 줄 : "},{"score":{"objective":"main","name":"removedLine"}}]}
-execute unless entity @a[tag=join] run tellraw @a {"rawtext":[{"text":"\n§l§bTETRIS 》 §r§f게임이 강제 종료되어 결과는 삭제됩니다."}]}
+execute unless entity @a[tag=join] run tellraw @a {"rawtext":[{"text":"\n§l§bTETRIS 》 §r§f게임이 강제 종료되어 결과가 저장되지 않았습니다."}]}
 
 scoreboard players operation @a[tag=join,c=1] highScore > score main
 scoreboard players operation @a[tag=join,c=1] highLine > removedLine main

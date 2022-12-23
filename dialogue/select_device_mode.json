@@ -1,0 +1,41 @@
+{
+    "format_version":"1.19.50",
+    "minecraft:npc_dialogue":{
+        "scenes":[
+            {
+                "scene_tag":"select_device_mode",
+                "npc_name":"§r§l§0디바이스 모드 설정",
+                "text":"디바이스 모드를 선택해주세요.",
+                "on_close_commands":[
+                    "tellraw @initiator {\"rawtext\":[{\"text\":\"§l§bTETRIS 》 §r디바이스 변경을 취소하였습니다.\"}]}"
+                ],
+                "buttons":[
+                    {
+                        "name":"PC",
+                        "commands":[
+                            "execute as @initiator run function select_PC"
+                        ]
+                    },
+                    {  
+                        "name":"모바일",
+                        "commands":[
+                            "execute as @initiator run function select_mobile"
+                        ] 
+                    },
+                    {
+                        "name":"Take Gold?",
+                        "commands":[
+                            "/give @initiator gold_ingot"
+                        ]
+                    },
+                    {  
+                        "name":"Wish Luck",
+                        "commands":[
+                            "/say Good luck, @initiator"
+                        ] 
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -65,18 +65,18 @@ execute if score l0 line matches 10 run clone 1 -60 0 19 -60 9 0 -60 0 masked mo
 execute if score debugMode main matches 1 run tellraw @a {"rawtext":[{"text":"§bremoveAbleLine, main = "},{"score":{"objective":"main","name":"removeAbleLine"}}]}
 # execute if score removeAbleLine main matches 1.. run function game/remove_line
 
-execute if score removeAbleLine main matches 1 run title @a[tag=join] subtitle §e§ㄱSINGLE +20
+execute if score removeAbleLine main matches 1 run title @a[tag=showInfo] subtitle §e§ㄱSINGLE +20
 execute if score removeAbleLine main matches 1 run scoreboard players add score main 20
-execute if score removeAbleLine main matches 2 run title @a[tag=join] subtitle §e§ㄱDOUBLE +50
+execute if score removeAbleLine main matches 2 run title @a[tag=showInfo] subtitle §e§ㄱDOUBLE +50
 execute if score removeAbleLine main matches 2 run scoreboard players add score main 50
-execute if score removeAbleLine main matches 3 run title @a[tag=join] subtitle §e§ㄱTRIPLE +100
+execute if score removeAbleLine main matches 3 run title @a[tag=showInfo] subtitle §e§ㄱTRIPLE +100
 execute if score removeAbleLine main matches 3 run scoreboard players add score main 100
-execute if score removeAbleLine main matches 4 run title @a[tag=join] subtitle §e§l§ㄱTETRIS +200
+execute if score removeAbleLine main matches 4 run title @a[tag=showInfo] subtitle §e§l§ㄱTETRIS +200
 execute if score removeAbleLine main matches 4 run scoreboard players add score main 200
-execute if score removeAbleLine main matches 1..4  run titleraw @a[tag=join] title {"rawtext":[{"text":" "}]}
+execute if score removeAbleLine main matches 1..4  run titleraw @a[tag=showInfo] title {"rawtext":[{"text":" "}]}
 
-execute if score removeAbleLine main matches 1..2 as @a[tag=join] at @s run playsound random.orb @s ~ ~ ~ 1 0.5
-execute if score removeAbleLine main matches 3..4 as @a[tag=join] at @s run playsound random.levelup @s ~ ~ ~ 1 0.5
+execute if score removeAbleLine main matches 1..2 as @a[tag=showInfo] at @s run playsound random.orb @s ~ ~ ~ 1 0.5
+execute if score removeAbleLine main matches 3..4 as @a[tag=showInfo] at @s run playsound random.levelup @s ~ ~ ~ 1 0.5
 
 scoreboard players operation removedLine main += removeAbleLine main
 scoreboard players operation temp_removedLine main += removeAbleLine main

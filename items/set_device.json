@@ -1,0 +1,35 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "tetris:set_device",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:hand_equipped": false,
+			"minecraft:foil": false,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "move"
+				}
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:damage": 0,
+			"minecraft:display_name": {
+				"value": "§l§a디바이스 모드 설정"
+			},
+			"minecraft:icon": {
+				"texture": "tetris_device_mode"
+			}
+		},
+		"events": {
+			"move": {
+				"run_command": {
+					"command": [
+						"function item/device_mode"
+					]
+				}
+			}
+		}
+	}
+}

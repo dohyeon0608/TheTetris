@@ -20,6 +20,9 @@ scoreboard players add @a[tag=join] highScore 0
 scoreboard players add @a[tag=join] highLine 0
 scoreboard players add @a[tag=join] highLevel 0
 
+scoreboard players set score main 0
+scoreboard players set removedLine main 0
+
 structure load L01 1 -60 15
 
 execute if score debugMode main matches 1 run tellraw @s {"rawtext":[{"text":"§l§bTETRIS : §r디버그 모드로 시작했습니다."}]}

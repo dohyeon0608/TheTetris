@@ -1,4 +1,5 @@
 execute if score time main matches 1.. run scoreboard players add time main 1
+execute if score time main matches 1.. run effect @a[tag=join] invisibility 1 1 true
 execute if score time main matches 140.. run execute as @a[tag=join,c=1] run scoreboard players add drop_time main 1
 execute if score drop_time main matches 25 run function game/on_falling
 execute if score drop_time main matches 25.. run function game/reset_drop_time
@@ -20,4 +21,5 @@ execute if score time main matches 140 run title @a[tag=join] title §l§e시작
 execute if score time main matches 140 run playsound beacon.activate @a[tag=join] 
 execute if score time main matches 140.. run titleraw @a[tag=showInfo] actionbar {"rawtext":[{"text":"§l§bSCORE: §r§ㄱ§f"},{"score":{"objective":"main","name":"score"}}]}
 execute if score time main matches 140.. run title @a[tag=join] times 10 20 10
+execute if score time main matches 140.. run title @a[tag=spectator] times 10 20 10
 execute as @a[tag=join] if score time main matches 140 run function game/create_block

@@ -19,7 +19,17 @@
             "type": "data",
             "uuid": "a264af7e-ba33-4e4d-adbe-90301d1817f1",
             "version": [1, 0, 0]
-        }
+        },
+		{
+			"type": "script",
+			"uuid": "d49dced3-2afb-47c9-9b28-2e301a34e6b1",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
     ],
 	"dependencies": [
 		{
@@ -29,6 +39,14 @@
 				0
 			],
 			"uuid": "15c773ab-3ec6-4d27-a036-abb44d471db4"
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.5.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.1.0"
 		}
 	]
 }

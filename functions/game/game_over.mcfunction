@@ -36,6 +36,9 @@ scoreboard players set time main 0
 # scoreboard players reset * drop_time
 # execute as @a[tag=join] run playsound random.explode @s
 execute as @a[tag=join] positioned -65 -38 8 run playsound random.explode @s ~ ~ ~ 300
+
+camera @a[tag=join] clear
+
 tag * remove join
 tag * remove game_over
 fill 8 -60 13 11 -60 16 air
@@ -45,6 +48,7 @@ kill @e[tag=next_set]
 
 scoreboard players set score main 0
 scoreboard players set removedLine main 0
+
 # clear @a tetris:move_left
 # clear @a tetris:move_right
 # clear @a tetris:soft_drop

@@ -1,33 +1,25 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.40",
 	"minecraft:item": {
 		"description": {
 			"identifier": "tetris:soft_drop",
-			"category": "items"
+			"menu_category": {
+                "category": "items"
+            }
 		},
 		"components": {
 			"minecraft:hand_equipped": false,
-			"minecraft:foil": false,
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "drop"
-				}
-			},
+			"minecraft:custom_components": [
+				"tetris:soft_drop"
+			],
 			"minecraft:max_stack_size": 1,
 			"minecraft:damage": 0,
 			"minecraft:display_name": {
 				"value": "§l§a아래로 내리기"
 			},
-			"minecraft:icon": {
-				"texture": "tetris_soft_drop"
-			}
-		},
-		"events": {
-			"drop": {
-				"run_command": {
-					"command": [
-						"function item/soft_drop"
-					]
+			"minecraft:icon" : {
+				"textures": {
+					"default": "tetris_soft_drop"
 				}
 			}
 		}

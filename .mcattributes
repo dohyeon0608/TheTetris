@@ -1,3 +1,4 @@
 diagnostic.disable.behaviorpack.block.missing=true
 diagnostic.disable.behaviorpack.block.missing=true
 diagnostic.disable.behaviorpack.mcfunction.syntax.unknown=true
+diagnostic.disable.debugger.internal.exception=true

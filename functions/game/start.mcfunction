@@ -1,4 +1,5 @@
-tp @a[tag=join] 6 -48 11 270 90
+tp @a[tag=join] 6 -35 11 270 90
+camera @a[tag=join] set minecraft:free pos 6 -41 9 rot 90 270
 scoreboard players add @a[tag=join] deviceMode 0
 execute if entity @a[tag=join] run fill 0 -60 0 19 -60 9 air
 execute if entity @a[tag=join] run scoreboard players set time main 1

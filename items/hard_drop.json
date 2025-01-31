@@ -1,33 +1,25 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.40",
 	"minecraft:item": {
 		"description": {
 			"identifier": "tetris:hard_drop",
-			"category": "items"
+			"menu_category": {
+                "category": "items"
+            }
 		},
 		"components": {
 			"minecraft:hand_equipped": false,
-			"minecraft:foil": false,
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "drop"
-				}
-			},
+			"minecraft:custom_components": [
+				"tetris:hard_drop"
+			],
 			"minecraft:max_stack_size": 1,
 			"minecraft:damage": 0,
 			"minecraft:display_name": {
 				"value": "§l§a완전히 내리기"
 			},
 			"minecraft:icon": {
-				"texture": "tetris_hard_drop"
-			}
-		},
-		"events": {
-			"drop": {
-				"run_command": {
-					"command": [
-						"function item/hard_drop"
-					]
+				"textures": {
+					"default": "tetris_hard_drop"
 				}
 			}
 		}

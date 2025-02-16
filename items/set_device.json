@@ -21,7 +21,8 @@
 				"textures": {
 					"default": "tetris_device_mode"
 				}
-			}
+			},
+			"minecraft:interact_button": "디바이스 모드 설정"
 		}
 	}
 }

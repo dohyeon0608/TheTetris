@@ -11,5 +11,6 @@ execute as @e[name=O,type=minecraft:armor_stand] run tag @e[tag=b] add cannot_tu
 execute if entity @e[type=minecraft:armor_stand,tag=cannot_turn,c=1] as @e[type=minecraft:armor_stand,tag=stand] at @s run tp ~ ~ ~ ~90 ~
 
 function game/update_block
+playsound step.cloth @s 6 -41 9
 
 tag @e remove cannot_turn

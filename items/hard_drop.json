@@ -21,7 +21,8 @@
 				"textures": {
 					"default": "tetris_hard_drop"
 				}
-			}
+			},
+			"minecraft:interact_button": "완전히 내리기"
 		}
 	}
 }

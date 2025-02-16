@@ -21,7 +21,8 @@
 				"textures": {
 					"default": "ender_pearl"
 				}
-			}
+			},
+			"minecraft:interact_button": "관전 그만하기"
 		}
 	}
 }

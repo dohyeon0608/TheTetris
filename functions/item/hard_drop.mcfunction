@@ -1,5 +1,6 @@
 execute as @e[type=minecraft:armor_stand,tag=b] at @s run setblock ~ ~ ~ air
 execute as @e[type=minecraft:armor_stand,tag=stand] at @s run tp ~-1 ~ ~
+playsound step.cloth @s 6 -41 9
 function game/tick
 
 # repeat 18 times

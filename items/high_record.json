@@ -22,7 +22,8 @@
 				"textures": {
 					"default": "book_normal"
 				}
-			}
+			},
+			"minecraft:interact_button": "최고기록 확인"
 		}
 	}
 }

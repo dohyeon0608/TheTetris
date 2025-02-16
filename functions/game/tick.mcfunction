@@ -38,9 +38,9 @@ execute if score l18 line matches 1.. run tag @a[tag=join] add game_over
 execute if score l19 line matches 1.. run tag @a[tag=join] add game_over
 execute as @a[tag=game_over,c=1] at @s run function game/game_over
 
-execute as @a[tag=!join,tag=!spectator,x=6,y=-48,z=11,dx=0,dy=0,dz=0] if score debugMode main matches 0 at @s run tellraw @s {"rawtext":[{"text":"§l§bTETRIS 》 §r§f게임 중 연결이 끊어져 진행중인 게임이 강제종료되었습니다."}]}
-execute as @a[tag=!join,tag=!spectator,x=6,y=-48,z=11,dx=0,dy=0,dz=0] if score debugMode main matches 0 at @s run tellraw @s {"rawtext":[{"text":"§l§bTETRIS 》 §r§f이전 게임의 결과가 저장되지 않아 삭제되었습니다."}]}
-execute as @a[tag=!join,tag=!spectator,x=6,y=-48,z=11,dx=0,dy=0,dz=0] if score debugMode main matches 0 at @s run tp -65 -38 8
+execute as @a[tag=!join,tag=!spectator,x=6,y=-35,z=11,dx=0,dy=0,dz=0] if score debugMode main matches 0 at @s run tellraw @s {"rawtext":[{"text":"§l§bTETRIS 》 §r§f게임 중 연결이 끊어져 진행중인 게임이 강제종료되었습니다."}]}
+execute as @a[tag=!join,tag=!spectator,x=6,y=-35,z=11,dx=0,dy=0,dz=0] if score debugMode main matches 0 at @s run tellraw @s {"rawtext":[{"text":"§l§bTETRIS 》 §r§f이전 게임의 결과가 저장되지 않아 삭제되었습니다."}]}
+execute as @a[tag=!join,tag=!spectator,x=6,y=-35,z=11,dx=0,dy=0,dz=0] if score debugMode main matches 0 at @s run tp -65 -38 8
 
 scoreboard players add @a highLevel 0
 scoreboard players add @a highLine 0
@@ -60,3 +60,5 @@ execute as @a[tag=join] if score @s deviceMode  matches 1 if score time main mat
 function lobby/entry
 function lobby/spector
 function item/item_set
+function lobby/tutorial
+scoreboard players add @a deviceMode 0

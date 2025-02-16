@@ -1,8 +1,8 @@
 tp @a[tag=join] 6 -35 11 270 90
-camera @a[tag=join] set minecraft:free pos 6 -41 9 rot 90 270
 scoreboard players add @a[tag=join] deviceMode 0
 execute if entity @a[tag=join] run fill 0 -60 0 19 -60 9 air
 execute if entity @a[tag=join] run scoreboard players set time main 1
+execute as @a[tag=join] at @s run function game/camera_setting
 scoreboard players set @a[tag=join] itemSet 1
 scoreboard players set temp_removedLine main 0
 # replaceitem entity @a[tag=join] slot.hotbar 0 tetris:move_left 1 0 {"item_lock": { "mode": "lock_in_slot" } }

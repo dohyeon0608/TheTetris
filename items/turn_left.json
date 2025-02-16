@@ -21,7 +21,8 @@
 				"textures": {
 					"default": "tetris_turn_left"
 				}
-			}
+			},
+			"minecraft:interact_button": "왼쪽으로 돌리기"
 		}
 	}
 }

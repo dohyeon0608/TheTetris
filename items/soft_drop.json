@@ -21,7 +21,8 @@
 				"textures": {
 					"default": "tetris_soft_drop"
 				}
-			}
+			},
+			"minecraft:interact_button": "아래로 내리기"
 		}
 	}
 }

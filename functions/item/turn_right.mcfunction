@@ -13,3 +13,4 @@ execute if entity @e[type=minecraft:armor_stand,tag=cannot_turn,c=1] as @e[type=
 function game/update_block
 
 tag @e remove cannot_turn
+playsound step.cloth @s 6 -41 9

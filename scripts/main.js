@@ -1,4 +1,5 @@
-import { world } from "@minecraft/server";
+import { world, system } from "@minecraft/server";
+import { mainTick } from "./script";
 
 const eventList = ["hard_drop", "high_record", "move_left", "move_right", "set_device", "soft_drop", "stop_spectating", "turn_left", "turn_right"]
 
@@ -12,3 +13,5 @@ world.beforeEvents.worldInitialize.subscribe((data) => {
         })
     });
 })
+
+system.run(mainTick);
